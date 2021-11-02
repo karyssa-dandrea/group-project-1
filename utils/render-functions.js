@@ -1,20 +1,30 @@
 // import events from './data/events.js';
 
 var today = new Date();
+console.log(today);
 var dd = String(today.getDate()).padStart(2, '0');
 var mm = String(today.getMonth() + 1).padStart(2, '0');
 var yyyy = today.getFullYear();
-
+let todayDay = today.getDate();
 today = mm + '/' + dd + '/' + yyyy;
 
 
 export function renderCalendar() {
     const thead = document.getElementById('cal-thead');
-    const th = document.createElement('th');
-    th.textContent = today;
-    console.log(th);
-    thead.append(th);
+    for (let i = 0; i <= 7; i++){
+        todayDay++;
+        const th = document.createElement('th');
+        th.textContent = mm + '/' + todayDay + '/' + yyyy;
+        const tr = document.createElement('tr');
+        
+        tr.append(th);
+        console.log(todayDay);
+        thead.append(tr);
+    
+    }
+    
     return thead;
+    
     
     //On page load, load current week
     //render table heads
