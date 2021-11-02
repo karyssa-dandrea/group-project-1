@@ -1,8 +1,17 @@
-export function renderCalender(events) {
-    const calTable = document.createElement('table');
-    const calHead = document.createElement('thead');
-    
+import events from './data/events.js';
 
+export function getWeekDay(){}
+
+export function renderCalender() {
+    const selectWeek = document.getElementById('select-week');
+    console.log(selectWeek);
+
+    // const calRow = document.createElement('tr');
+
+    // for (let event of events){
+    //     const calData = document.createElement('td');
+
+    // }
 
 }
 
