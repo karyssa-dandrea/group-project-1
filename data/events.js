@@ -159,11 +159,86 @@ export const events = [{
     doors: '8:00pm',
     date: '2021-11-14',
     link: 'https://bossanovaballroom.com/events'
-
-
-
-
-
+}, {
+    venue: 'Arlene Schnitzer Concert Hall',
+    opener: 'N/A',
+    headliner: 'Hasan Minhaj',
+    vax: true,
+    price: '$45',
+    image: 'https://www.etix.com/ticket/p/5206816/hasan-minhajthe-kings-jester-late-show-portland-arlene-schnitzer-concert-hall-',
+    doors: '10:00 pm',
+    date: '2021-11-11',
+    link: 'https://portland5.evenue.net/cgi-bin/ncommerce3/SEGetEventInfo?ticketCode=GS:PCPA:PCPA21:AS1111L:&linkID=pcpa&shopperContext=&pc=&caller=&appCode=&groupCode=HASAN&cgc='
+}, {
+    venue: 'Aladdin Theater',
+    opener: 'N/A',
+    headliner: 'Julien Baker',
+    vax: true,
+    price: '$30',
+    image: 'https://www.etix.com/ticket/p/7190555/sold-outjulien-baker-night-1-portland-aladdin-theater',
+    doors: '7:00 pm',
+    date: '2021-11-09',
+    link: 'https://event.etix.com/ticket/online/performanceSale.do?performance_id=5257769&method=restoreToken'
+}, {
+    venue: 'Wonder Ballroom',
+    opener: 'Valley Queen',
+    headliner: 'Heartless Bastards',
+    vax: true,
+    price: '$20',
+    image: 'https://wonderballroom.com/wp-content/uploads/2021/06/HEARTLESS_BASTARDS-1536x1392.jpeg',
+    doors: '7:00 pm',
+    date: '2021-11-12',
+    link: 'https://www.etix.com/ticket/p/2511309/heartless-bastards-portland-wonder-ballroom?cobrand=WonderBallroom&partner_id=240&_ga=2.145946167.2079156451.1635812451-1466853754.1635812451'
+}, {
+    venue: 'Wonder Ballroom',
+    opener: 'Plastic Cactus',
+    headliner: 'La Luz',
+    vax: true,
+    price: '$20',
+    image: 'https://wonderballroom.com/wp-content/uploads/2021/09/LA_LUZ1632397395-1536x1097.jpeg',
+    doors: '7:30 pm',
+    date: '2021-11-18',
+    link: 'https://www.etix.com/ticket/p/2719532/la-luz-portland-wonder-ballroom?cobrand=WonderBallroom&partner_id=240&_ga=2.141817393.2079156451.1635812451-1466853754.1635812451'
+}, {
+    venue: 'Roseland Theater',
+    opener: 'N/A',
+    headliner: 'Madison Beer',
+    vax: true,
+    price: '$32.50',
+    image: 'https://www.etix.com/venueResources/performer/ticket/4179/47640',
+    doors: '8:00 pm',
+    date: '2021-11-20',
+    link: 'https://www.etix.com/ticket/p/3882457/madison-beer-portland-roseland-theater?partner_id=240'
+}, {
+    venue: 'Roseland Theater',
+    opener: 'N/A',
+    headliner: 'Blue October', 
+    vax: true,
+    price: '$35',
+    image: 'https://22ogwdl3ihu2md4sgmwtw8pt-wpengine.netdna-ssl.com/wp-content/uploads/2021/06/Blue-October-PDX-Tour-Admat-1536x1366.jpg',
+    doors: '8:00 pm',
+    date: '2021-11-16',
+    link: 'https://event.etix.com/ticket/online/performanceSale.do?method=switchSelectionMethod&selection_method=byPriceLevel'
+}, {
+    venue: 'Hawthorne Theater',
+    opener: 'Slauson Malone',
+    headliner: 'Injury Reserve',
+    vax: true,
+    price: '$20',
+    image: 'https://www.etix.com/venueResources/performer/ticket/2942/50724',
+    doors: '8:00 pm',
+    date: '2021-11-08',
+    link: 'https://event.etix.com/ticket/online/performanceSale.do?performance_id=5613212&partner_id=240&method=restoreToken&cobrand=cascadetickets'
+}, {
+    venue: 'Hawthorne Theater',
+    opener: 'Ric Wilson',
+    headliner: 'Yellow Days',
+    vax: true,
+    price: '$20',
+    image: 'https://www.etix.com/venueResources/performer/ticket/2942/48327',
+    doors: '8:00 pm',
+    date: '2021-11-11',
+    link: 'https://event.etix.com/ticket/online/performanceSale.do?performance_id=6780235&partner_id=240&method=restoreToken&cobrand=cascadetickets'
 
 
 }];
