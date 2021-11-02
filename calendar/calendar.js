@@ -1,7 +1,3 @@
-const selectWeek = document.getElementById('select-week');
-const button = document.getElementById('choose');
+import { renderCalendar } from '../utils/render-functions.js';
 
-button.addEventListener('click', ()=>{
-    console.log('clicking the button');
-    console.log(selectWeek);
-});
+renderCalendar();

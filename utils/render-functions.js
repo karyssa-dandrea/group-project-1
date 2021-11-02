@@ -1,43 +1,54 @@
-import events from './data/events.js';
+// import events from './data/events.js';
 
-export function getWeekDay(){}
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0');
+var yyyy = today.getFullYear();
 
-export function renderCalender() {
-    const selectWeek = document.getElementById('select-week');
-    console.log(selectWeek);
+today = mm + '/' + dd + '/' + yyyy;
 
-    // const calRow = document.createElement('tr');
 
-    // for (let event of events){
-    //     const calData = document.createElement('td');
-
-    // }
-
+export function renderCalendar() {
+    const thead = document.getElementById('cal-thead');
+    const th = document.createElement('th');
+    th.textContent = today;
+    console.log(th);
+    thead.append(th);
+    return thead;
+    
+    //On page load, load current week
+    //render table heads
+    //increment 1 week worth of dates
+    //stop after 6
+    //render empty <tr> in the <tbody>
 }
 
 export function renderEvents(){
-    const eventName = document.createElement('h1');
-    eventName.textContent = events.headliner;
+    //loop through events create TD for each event with matching date
+    //
     
-    const eventImage = document.createElement('img');
-    eventImage.src = events.image;
+    // const eventName = document.createElement('h1');
+    // eventName.textContent = events.headliner;
     
-    const eventOpener = document.createElement('h2');
-    eventOpener.textContent = events.opener;
+    // const eventImage = document.createElement('img');
+    // eventImage.src = events.image;
     
-    const eventDoors = document.createElement('');
-    eventDoors.textContent = events.doors;
+    // const eventOpener = document.createElement('h2');
+    // eventOpener.textContent = events.opener;
     
-    const eventPrice = document.createElement('');
-    eventPrice.textContent = events.price;
+    // const eventDoors = document.createElement('');
+    // eventDoors.textContent = events.doors;
     
-    const eventDate = document.createElement('');
-    eventDate.textContent = events.date;
+    // const eventPrice = document.createElement('');
+    // eventPrice.textContent = events.price;
     
-    const eventLink = document.createElement('');
-    eventLink.textContent = events.link;
+    // const eventDate = document.createElement('');
+    // eventDate.textContent = events.date;
     
-    const eventVenue = document.createElement('');
-    eventVenue.textContent = events.venue;
+    // const eventLink = document.createElement('');
+    // eventLink.textContent = events.link;
+    
+    // const eventVenue = document.createElement('');
+    // eventVenue.textContent = events.venue;
 
 }
