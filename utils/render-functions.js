@@ -15,11 +15,9 @@ export function renderCalendar() {
         todayDay++;
         const th = document.createElement('th');
         th.textContent = mm + '/' + todayDay + '/' + yyyy;
-        const tr = document.createElement('tr');
         
-        tr.append(th);
         console.log(todayDay);
-        thead.append(tr);
+        thead.append(th);
     
     }
     
