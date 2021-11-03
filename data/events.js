@@ -16,7 +16,7 @@ export const events = [{
     price: '$20',
     image: 'https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F145475607%2F302303507651%2F1%2Foriginal.20210824-192704?h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C310%2C3090%2C1545&s=5728a2dd9b5a103ccb3428777ba29bd9',
     doors: '9:00 pm',
-    date: '2021-11-8',
+    date: '2021-11-08',
     link: 'https://www.eventbrite.com/e/puma-blue-tickets-168320287511'
 }, {
     venue: 'Revolution Hall',
@@ -87,7 +87,7 @@ export const events = [{
     price: '$30',
     image: 'https://maytherockbewithyou.com/mtrbwy/wp-content/uploads/2012/03/press_shot_1sml.jpg',
     doors: '6:30 pm',
-    date: '2021-11-9',
+    date: '2021-11-09',
     link: 'https://event.etix.com/ticket/online/performanceSale.do?performance_id=6131266&method=restoreToken#_ga=2.106035203.1451310243.1635811477-1264417832.1635811477'
 }, {
     venue: 'Crystal Ballroom',
@@ -117,7 +117,7 @@ export const events = [{
     price: '$20',
     image: 'https://i.ticketweb.com/i/00/10/34/80/79_Edp.jpg?v=11',
     doors: '7:00pm',
-    date: '2021-11-9',
+    date: '2021-11-09',
     link: 'https://www.ticketweb.com/event/phony-ppl-star-theater-tickets/11241165?pl=star&REFID=clientsitewp'
 }, {
     venue: 'Keller Auditorium',
@@ -127,7 +127,7 @@ export const events = [{
     price: '$196',
     image: 'https://portland.broadway.com/wp-content/uploads/2018/12/012_1920_NewTourShowKeyArt_MeanGirls-671x1065.jpg',
     doors: '7:30pm',
-    date: '2021-11-8',
+    date: '2021-11-08',
     link: 'https://www.ticketsonsale.com/tickets/mean-girls-the-musical-keller-auditorium-portland-11-10-2021-3556199'
 }, {
     venue: 'Keller Auditorium',
@@ -239,6 +239,4 @@ export const events = [{
     doors: '8:00 pm',
     date: '2021-11-11',
     link: 'https://event.etix.com/ticket/online/performanceSale.do?performance_id=6780235&partner_id=240&method=restoreToken&cobrand=cascadetickets'
-
-
 }];

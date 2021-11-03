@@ -1,12 +1,13 @@
-//import events from './data/events.js';
+import { events } from '../data/events.js';
 
+let eventDate;
 let today = new Date();
 let dd = String(today.getDate()).padStart(2, '0');
 let mm = String(today.getMonth() + 1).padStart(2, '0');
 let yyyy = today.getFullYear();
 let todayDay = today.getDate();
 today = mm + '/' + dd + '/' + yyyy;
-
+today = eventDate;
 //if yyyy-mm-dd === event.date
 //td.textcontent = event
 
@@ -22,18 +23,20 @@ export function renderCalendar() {
     return thead;
 }
 
-export function findByDate(date, events){
-
-    for (let event of events){
-        if (event.date === date){
-            return event;
-        }
-    }
-}
-
 export function renderEvents(events){
     const tbody = document.getElementById('cal-body');
-    const eventData = findByDate(events.date, events);
+    const eventData = events.filter(event=>{
+        let today = new Date();
+        const eventDate = new Date(event.date);
+        if (eventDate.getDate() + 1 <= today.getDate() + 7){
+
+            return event;
+        }
+
+        // console.log(newDate.getDate() + 1);
+        // console.log(today.getDate());
+        // console.log(event.date);
+    });
     console.log(eventData);
     let currentDate = todayDay;
 

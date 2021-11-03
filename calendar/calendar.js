@@ -4,6 +4,9 @@ import { events } from '../data/events.js';
 renderCalendar();
 renderEvents(events);
 
+
+
+
 //nextbutton event listener
 //click button
 //render calendar
