@@ -1,13 +1,13 @@
 import { events } from '../data/events.js';
 
-let eventDate;
+
 let today = new Date();
 let dd = String(today.getDate()).padStart(2, '0');
 let mm = String(today.getMonth() + 1).padStart(2, '0');
 let yyyy = today.getFullYear();
 let todayDay = today.getDate();
 today = mm + '/' + dd + '/' + yyyy;
-today = eventDate;
+
 //if yyyy-mm-dd === event.date
 //td.textcontent = event
 
@@ -23,7 +23,7 @@ export function renderCalendar() {
     }
     return thead;
 }
-console.log();
+
 
 
 export function renderEvents(events){
@@ -43,29 +43,48 @@ export function renderEvents(events){
             db = new Date(b.date);
         return da - db;
     });
-    console.log(eventData);
-    for (let event of eventData){
-        //findById each th
-        //compare the id to filtered date by sorting
-        //
-        //let th = document.getElementById(th.textContent);
-        //console.log(th);
-
+    const tr = document.createElement('tr');
+    todayDay = new Date().getDate();
+    for (let i = 0; i <= 6; i++){
+        todayDay++;
         const td = document.createElement('td');
-        td.setAttribute('headers', event.date);
-        
-
-        const eventName = document.createElement('a');
-        eventName.textContent = event.headliner;
-        eventName.href = event.link;
-        
-        const eventImage = document.createElement('img');
-        eventImage.src = event.image;
-
-        //sort and append by date
-        td.append(eventImage, eventName);
-        tbody.append(td);
+        const eventData = events.filter(event=>{
+            
+            const eventDate = new Date(event.date);
+            if (eventDate.getDate() + 1 === todayDay){
+                
+                
+                return event;
+            }
+        });
+        console.log(todayDay);
+        console.log(eventData);
+        //filter events using todayDay
+        tr.append(td);
     }
+
+    // for (let event of eventData){
+    //     //findById each th
+    //     //compare the id to filtered date by sorting
+    //     //
+    //     //let th = document.getElementById(th.textContent);
+    //     //console.log(th);
+
+    //     const td = document.createElement('td');
+    //     td.setAttribute('headers', event.date);
+        
+
+    //     const eventName = document.createElement('a');
+    //     eventName.textContent = event.headliner;
+    //     eventName.href = event.link;
+        
+    //     const eventImage = document.createElement('img');
+    //     eventImage.src = event.image;
+
+    //     //sort and append by date
+    //     td.append(eventImage, eventName);
+    //     tbody.append(td);
+    // }
     
     //let currentDate = todayDay;
 
