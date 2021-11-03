@@ -23,6 +23,8 @@ export function renderCalendar() {
     }
     return thead;
 }
+console.log();
+
 
 export function renderEvents(events){
     const tbody = document.getElementById('cal-body');
@@ -31,12 +33,17 @@ export function renderEvents(events){
         let today = new Date();
         const eventDate = new Date(event.date);
         if (eventDate.getDate() + 1 <= today.getDate() + 7){
+            
+            
             return event;
         }
     });
+    eventData.sort((a, b) => {
+        let da = new Date(a.date),
+            db = new Date(b.date);
+        return da - db;
+    });
     console.log(eventData);
-
-    
     for (let event of eventData){
         //findById each th
         //compare the id to filtered date by sorting
@@ -46,7 +53,7 @@ export function renderEvents(events){
 
         const td = document.createElement('td');
         td.setAttribute('headers', event.date);
-        console.log(event.date);
+        
 
         const eventName = document.createElement('a');
         eventName.textContent = event.headliner;
