@@ -4,7 +4,12 @@ import { events } from '../data/events.js';
 renderCalendar();
 renderEvents(events);
 
+const nextWeek = document.getElementById('next');
 
+nextWeek.addEventListener('click', ()=>{
+    renderCalendar();
+    renderEvents(events);
+});
 
 
 //nextbutton event listener
