@@ -56,11 +56,25 @@ export function renderEvents(events){
                 
                 return event;
             }
+            console.log(todayDay);
         });
-        console.log(todayDay);
         console.log(eventData);
-        //filter events using todayDay
+        eventData.forEach(event =>{
+            const eventDiv = document.createElement('div');
+            const eventName = document.createElement('a');
+            eventName.textContent = event.headliner;
+            eventName.href = event.link;
+        
+            const eventImage = document.createElement('img');
+            eventImage.src = event.image;
+            eventDiv.append(eventImage, eventName);
+            td.append(eventDiv);
+        });
+        
+
+
         tr.append(td);
+        tbody.append(tr);
     }
 
     // for (let event of eventData){
