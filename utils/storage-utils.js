@@ -20,7 +20,7 @@ export function confirmUser(userObject, username, password) {
         if (username === user.username && password === user.password) {
             const loggedIn = user;
             localStorage.setItem('LOGGEDIN', JSON.stringify(loggedIn));
-            return window.location.replace('../calendar.index.html');
+            return window.location.replace('../calendar/index.html');
         }
     }
 }
