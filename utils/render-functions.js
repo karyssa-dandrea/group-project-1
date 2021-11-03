@@ -18,7 +18,7 @@ export function renderCalendar() {
         todayDay++;
         const th = document.createElement('th');
         th.textContent = mm + '/' + todayDay + '/' + yyyy;
-        th.setAttribute('id', th.textContent);
+        th.setAttribute('id', yyyy + '-' + mm + '-' + todayDay);
         thead.append(th);
     }
     return thead;
@@ -38,10 +38,15 @@ export function renderEvents(events){
 
     
     for (let event of eventData){
-        let th = document.getElementById(th.textContent);
-        console.log(th);
+        //findById each th
+        //compare the id to filtered date by sorting
+        //
+        //let th = document.getElementById(th.textContent);
+        //console.log(th);
 
         const td = document.createElement('td');
+        td.setAttribute('headers', event.date);
+        console.log(event.date);
 
         const eventName = document.createElement('a');
         eventName.textContent = event.headliner;
@@ -50,6 +55,7 @@ export function renderEvents(events){
         const eventImage = document.createElement('img');
         eventImage.src = event.image;
 
+        //sort and append by date
         td.append(eventImage, eventName);
         tbody.append(td);
     }
