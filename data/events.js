@@ -239,4 +239,26 @@ export const events = [{
     doors: '8:00 pm',
     date: '2021-11-11',
     link: 'https://event.etix.com/ticket/online/performanceSale.do?performance_id=6780235&partner_id=240&method=restoreToken&cobrand=cascadetickets'
-}];
+}, {
+    headliner: 'Band',
+    img: '',
+    date: '2021-11-03'
+}, {
+    headliner: 'Band Again',
+    img: '',
+    date: '2021-11-04'
+}, {
+    headliner: 'Band-Aid',
+    img: '',
+    date: '2021-11-05'
+}, {
+    headliner: 'Some Band',
+    img: '',
+    date: '2021-11-06'
+}, {
+    headliner: 'Hello Band',
+    img: '',
+    date: '2021-11-07'
+}
+
+];

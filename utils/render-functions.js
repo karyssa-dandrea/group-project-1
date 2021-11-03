@@ -14,10 +14,11 @@ today = eventDate;
 
 export function renderCalendar() {
     const thead = document.getElementById('cal-thead');
-    for (let i = 0; i <= 7; i++){
+    for (let i = 0; i <= 6; i++){
         todayDay++;
         const th = document.createElement('th');
         th.textContent = mm + '/' + todayDay + '/' + yyyy;
+        th.setAttribute('id', th.textContent);
         thead.append(th);
     }
     return thead;
@@ -25,38 +26,53 @@ export function renderCalendar() {
 
 export function renderEvents(events){
     const tbody = document.getElementById('cal-body');
+    
     const eventData = events.filter(event=>{
         let today = new Date();
         const eventDate = new Date(event.date);
         if (eventDate.getDate() + 1 <= today.getDate() + 7){
-
             return event;
         }
-
-        // console.log(newDate.getDate() + 1);
-        // console.log(today.getDate());
-        // console.log(event.date);
     });
     console.log(eventData);
-    let currentDate = todayDay;
 
-    for (let i = 0; i <= 7; i++){
-        const calDay = yyyy + '-' + mm + '-' + currentDate++ ;
-        if (eventData === calDay){
-            const td = document.createElement(td);
+    
+    for (let event of eventData){
+        let th = document.getElementById(th.textContent);
+        console.log(th);
 
-            const eventName = document.createElement('a');
-            eventName.textContent = events.headliner;
-            eventName.href = events.link;
+        const td = document.createElement('td');
+
+        const eventName = document.createElement('a');
+        eventName.textContent = event.headliner;
+        eventName.href = event.link;
         
-            const eventImage = document.createElement('img');
-            eventImage.src = events.image;
+        const eventImage = document.createElement('img');
+        eventImage.src = event.image;
 
-            td.append(eventImage, eventName);
-            tbody.append(td);
-        }
-        return tbody;
+        td.append(eventImage, eventName);
+        tbody.append(td);
     }
+    
+    //let currentDate = todayDay;
+
+    // for (    {
+    //     const calDay = yyyy + '-' + mm + '-' + currentDate++ ;
+    //     if (eventData === calDay){
+    //         const td = document.createElement(td);
+
+    //         const eventName = document.createElement('a');
+    //         eventName.textContent = events.headliner;
+    //         eventName.href = events.link;
+        
+    //         const eventImage = document.createElement('img');
+    //         eventImage.src = events.image;
+
+    //         td.append(eventImage, eventName);
+    //         tbody.append(td);
+    //     }
+    //     return tbody;
+    // }
     
 
     // for (let event of events) {
