@@ -1,5 +1,6 @@
 import { events } from '../data/events.js';
 
+
 const form = document.getElementById('admin-form');
 
 form.addEventListener('submit', (e) =>{
@@ -18,8 +19,9 @@ form.addEventListener('submit', (e) =>{
     };
     console.log(newEvent);
     events.push(newEvent);
+    console.log(events);
     alert('New Event Added');
     document.querySelector('form').reset();
-    return events;
+    
     
 });

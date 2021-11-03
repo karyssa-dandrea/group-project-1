@@ -1,6 +1,7 @@
 import { renderCalendar, renderEvents } from '../utils/render-functions.js';
-import { events } from '../data/events.js';
+import { getEvents } from '../utils/storage-utils.js';
 
+const events = getEvents();
 renderCalendar();
 renderEvents(events);
 

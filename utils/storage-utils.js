@@ -1,3 +1,5 @@
+import { events } from '../data/events.js';
+
 export function findById(items, id) {
     for (let item of items) {
         if (item.id === id) {
@@ -24,3 +26,14 @@ export function confirmUser(userObject, username, password) {
         }
     }
 }
+
+export function getEvents() {
+    let lsEvents = localStorage.getItem('EVENTS');
+    let parsedEvents = JSON.parse(lsEvents);
+    if (!lsEvents) {
+        localStorage.setItem('EVENTS', JSON.stringify(events));
+        parsedEvents = events;   
+    }
+    return parsedEvents || events;
+}
+
