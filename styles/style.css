@@ -5,3 +5,15 @@ table {
 img {
     width: 100px;
 }
+
+h1 {
+    font-family: 'Limelight', cursive;
+    text-align: center;
+
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
