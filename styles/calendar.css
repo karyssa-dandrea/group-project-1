@@ -1,0 +1,60 @@
+* {
+    font-family: 'Limelight', cursive;
+}
+ 
+td {
+    border: 2px solid black;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: rgba(254, 224, 0, 0.25);
+    border-radius: 15px;
+    margin: 5px;
+}
+
+a {
+    padding: 10px;
+    color: rgb(172, 6, 6);
+}
+
+th {
+    border: 2px solid black;
+    background-color: rgb(98, 176, 98);
+    padding: 10px;
+}
+
+button {
+    margin: 10px;
+    margin-bottom: 50px;
+    align-items: center;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: red;
+}
+
+img {
+    width: 100px;
+}
+
+td:empty {
+    width: 150px;
+}
+
+table {
+    margin: 20px;
+    margin-left: 125px;
+    margin-right: 125px;
+}
+
+body {
+    text-align: center;
+}
