@@ -1,20 +1,20 @@
 import { events } from '../data/events.js';
 
-export function setUser(userObject) {
-    localStorage.setItem('USER', JSON.stringify(userObject));
+export function setUser(userArray) {
+    localStorage.setItem('USER', JSON.stringify(userArray));
 }
 
-export function getUserObject() {
+export function getUser() {
     const userString = localStorage.getItem('USER') || '[ ]';
     return JSON.parse(userString);
 }
 
-export function confirmUser(userObject, username, password) {
-    for (let user of userObject) {
-        if (username === user.username && password === user.password) {
+export function confirmUser(userArray, username, password) {
+    for (let user of userArray) {
+        if (username === user.name && password === user.password) {
             const loggedIn = user;
             localStorage.setItem('LOGGEDIN', JSON.stringify(loggedIn));
-            return window.location.replace('../calendar/index.html');
+            return window.location.replace('../admin/index.html');
         }
     }
 }
