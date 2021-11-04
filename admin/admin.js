@@ -1,5 +1,5 @@
 import { events } from '../data/events.js';
-
+import { setEvents } from '../utils/storage-utils.js';
 
 const form = document.getElementById('admin-form');
 
@@ -17,9 +17,9 @@ form.addEventListener('submit', (e) =>{
         date: data.get('date'), 
         link: data.get('link')
     };
-    console.log(newEvent);
-    events.push(newEvent);
-    console.log(events);
+    
+    
+    setEvents(newEvent);
     alert('New Event Added');
     document.querySelector('form').reset();
     
