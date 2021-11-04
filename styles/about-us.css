@@ -1,4 +1,38 @@
 
-.icon {
-    width: 50px;
+* {
+    font-family: 'Limelight', cursive;
 }
+
+a {
+    margin: 10px;
+    font-family: 'Limelight', cursive;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+}
+
+.icon {
+    width: 40px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#free-icon {
+    font-size: 5px;
+}
+
+.pic {
+    margin-top: 20px;
+}
+

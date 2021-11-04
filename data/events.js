@@ -51,7 +51,7 @@ export const events = [{
 }, {
     venue: 'The Old Church',
     opener: 'N/A',
-    headliner: 'Jiji Kim "The 21st Centure Guitarist',
+    headliner: 'Jiji Kim',
     vax: true,
     price: '$28',
     image: 'https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F138686241%2F269329836431%2F1%2Foriginal.20210614-204130?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C367%2C4000%2C2000&s=580d6cf29c25a13de8469b627b7dce91',  
@@ -122,7 +122,7 @@ export const events = [{
 }, {
     venue: 'Keller Auditorium',
     opener: 'N/A',
-    headliner: 'Mean Girls - The Musical',
+    headliner: 'Mean Girls',
     vax: true,
     price: '$196',
     image: 'https://portland.broadway.com/wp-content/uploads/2018/12/012_1920_NewTourShowKeyArt_MeanGirls-671x1065.jpg',
@@ -165,7 +165,7 @@ export const events = [{
     headliner: 'Hasan Minhaj',
     vax: true,
     price: '$45',
-    image: 'https://www.etix.com/ticket/p/5206816/hasan-minhajthe-kings-jester-late-show-portland-arlene-schnitzer-concert-hall-',
+    image: 'https://pbs.twimg.com/profile_images/1423674940612612103/W86uVN_G_400x400.jpg',
     doors: '10:00 pm',
     date: '2021-11-11',
     link: 'https://portland5.evenue.net/cgi-bin/ncommerce3/SEGetEventInfo?ticketCode=GS:PCPA:PCPA21:AS1111L:&linkID=pcpa&shopperContext=&pc=&caller=&appCode=&groupCode=HASAN&cgc='
@@ -175,7 +175,7 @@ export const events = [{
     headliner: 'Julien Baker',
     vax: true,
     price: '$30',
-    image: 'https://www.etix.com/ticket/p/7190555/sold-outjulien-baker-night-1-portland-aladdin-theater',
+    image: 'https://www.rollingstone.com/wp-content/uploads/2021/02/JULIEN-BAKER-ROLLING-STONE-SHOOT-932020c.jpg?resize=1800,1200&w=1200',
     doors: '7:00 pm',
     date: '2021-11-09',
     link: 'https://event.etix.com/ticket/online/performanceSale.do?performance_id=5257769&method=restoreToken'
