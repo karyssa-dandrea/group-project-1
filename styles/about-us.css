@@ -1,4 +1,19 @@
 
+* {
+    font-family: 'Limelight', cursive;
+}
+
+a {
+    font-family: 'Limelight', cursive;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
 .icon {
     width: 50px;
+    display: flex;
+    flex-direction: row;
 }

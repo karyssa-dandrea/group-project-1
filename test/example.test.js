@@ -1,5 +1,4 @@
-// IMPORT MODULES under test here:
-// import { example } from '../example.js';
+import { renderEvents } from '../utils/render-functions.js';
 import { getEvents, setEvents } from '../utils/storage-utils.js';
 
 const test = QUnit.test;
@@ -41,3 +40,4 @@ test('setEvents should add an event to our event list', (expect) => {
 
     expect.equal(events.length, 24);
 });
+
