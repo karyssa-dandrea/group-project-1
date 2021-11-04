@@ -18,14 +18,20 @@ div {
     margin: 5px;
 }
 
+
 a {
     padding: 10px;
-    color: rgb(172, 6, 6);
+    color: #C00021;
+    text-shadow: 2px 2px 2px grey;
+}
+
+a:hover {
+    color:rgb(96, 3, 3);
 }
 
 th {
     border: 2px solid black;
-    background-color: rgb(98, 176, 98);
+    background-color: #FCC252;
     padding: 10px;
 }
 
@@ -38,11 +44,12 @@ button {
 }
 
 button:hover {
-    background-color: red;
+    background-color: #C00021;
 }
 
 img {
     width: 100px;
+    filter: drop-shadow(5px 5px 5px rgb(49, 56, 56));
 }
 
 td:empty {
