@@ -12,7 +12,7 @@ export function renderCalendar() {
         todayDay++;
         const th = document.createElement('th');
         th.textContent = mm + '/' + todayDay + '/' + yyyy;
-        th.setAttribute('id', yyyy + '-' + mm + '-' + todayDay);
+        th.setAttribute('class', 'headers');
         thead.append(th);
     }
     return thead;
@@ -20,7 +20,6 @@ export function renderCalendar() {
 
 export function renderEvents(events){
     const tbody = document.getElementById('cal-body');
-    
     const eventData = events.filter(event=>{
         let today = new Date();
         const eventDate = new Date(event.date);
@@ -39,7 +38,6 @@ export function renderEvents(events){
     for (let i = 0; i <= 6; i++){
         todayDay++;
         const td = document.createElement('td');
-
         const eventData = events.filter(event=>{
             const eventDate = new Date(event.date);
             if (eventDate.getDate() + 1 === todayDay){

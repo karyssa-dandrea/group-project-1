@@ -5,14 +5,14 @@ const events = getEvents();
 renderCalendar();
 renderEvents(events);
 
-const nextWeek = document.getElementById('next');
+// const nextWeek = document.getElementById('next');
 
-nextWeek.addEventListener('click', ()=>{
-    renderCalendar();
-    renderEvents(events);
-});
+// nextWeek.addEventListener('click', ()=>{
+//     renderCalendar();
+//     renderEvents(events);
+// });
 
 
-//nextbutton event listener
-//click button
-//render calendar
+// //nextbutton event listener
+// //click button
+// //render calendar

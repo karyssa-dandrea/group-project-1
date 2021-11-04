@@ -6,7 +6,6 @@ const form = document.getElementById('admin-form');
 form.addEventListener('submit', (e) =>{
     e.preventDefault();
     const data = new FormData(form);
- 
     const newEvent = {
         venue: data.get('venue'),
         opener: data.get('opener'),
@@ -18,10 +17,8 @@ form.addEventListener('submit', (e) =>{
         link: data.get('link')
     };
     
-    
     setEvents(newEvent);
     alert('New Event Added');
     document.querySelector('form').reset();
-    
     
 });

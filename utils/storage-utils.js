@@ -1,14 +1,5 @@
 import { events } from '../data/events.js';
 
-
-export function findById(items, id) {
-    for (let item of items) {
-        if (item.id === id) {
-            return item;
-        }
-    }
-}
-
 export function setUser(userObject) {
     localStorage.setItem('USER', JSON.stringify(userObject));
 }
