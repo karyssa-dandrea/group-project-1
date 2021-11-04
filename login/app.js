@@ -1,5 +1,5 @@
-import { getUser, setUser, confirmUser } from './utils/storage-utils.js';
-import { users } from './data/users.js';
+import { getUser, setUser, confirmUser } from '../utils/storage-utils.js';
+import { users } from '../data/users.js';
 
 const form = document.getElementById('login-form');
 setUser(users);
