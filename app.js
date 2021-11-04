@@ -8,7 +8,7 @@ getUserObject();
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const userObject = getUserObject();
-    console.log(userObject);
+    
     const formData = new FormData(form);
     const userName = formData.get('username');
     const password = formData.get('password');

@@ -20,7 +20,7 @@ export function renderCalendar() {
 
 export function renderEvents(events){
     const tbody = document.getElementById('cal-body');
-    console.log(events);
+    
     const eventData = events.filter(event=>{
         let today = new Date();
         const eventDate = new Date(event.date);
@@ -28,7 +28,7 @@ export function renderEvents(events){
             return event;
         }
     });
-    console.log(eventData);
+    
     eventData.sort((a, b) => {
         let da = new Date(a.date),
             db = new Date(b.date);

@@ -1,4 +1,4 @@
-import { events } from '../data/events.js';
+
 import { setEvents } from '../utils/storage-utils.js';
 
 const form = document.getElementById('admin-form');

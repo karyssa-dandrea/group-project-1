@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 import { getEvents, setEvents } from '../utils/storage-utils.js';
-import { renderEvents } from '../utils/render-functions.js';
+
 const test = QUnit.test;
 
 test('getEvents should get events out of local storage', (expect) => {

@@ -1,5 +1,5 @@
 import { events } from '../data/events.js';
-import { users } from '../data/users.js';
+
 
 export function findById(items, id) {
     for (let item of items) {
