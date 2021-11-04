@@ -38,3 +38,9 @@ export function getEvents() {
     return parsedEvents || events;
 }
 
+export function setEvents(newEvent) {
+    let events = getEvents();
+    events.push(newEvent);
+    let eventString = JSON.stringify(events);
+    localStorage.setItem('EVENTS', eventString);
+}
