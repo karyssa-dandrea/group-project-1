@@ -1,4 +1,4 @@
-import events from '../data/events.js';
+import { events } from '../data/events.js';
 
 export function setUser(userArray) {
     localStorage.setItem('USER', JSON.stringify(userArray));
