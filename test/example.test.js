@@ -1,13 +1,5 @@
-<<<<<<< HEAD
-import { renderEvents } from '../utils/render-functions.js';
-import { getEvents, setEvents } from '../utils/storage-utils.js';
-
-=======
-// IMPORT MODULES under test here:
-// import { example } from '../example.js';
 import { getEvents, setEvents, getUser, setUser } from '../utils/storage-utils.js';
  
->>>>>>> 78ae9edc93ca0f44089f1a4b5260d488560c235e
 const test = QUnit.test;
 
 test('getEvents should get events out of local storage', (expect) => {
@@ -48,8 +40,6 @@ test('setEvents should add an event to our event list', (expect) => {
     expect.equal(events.length, 24);
 });
 
-<<<<<<< HEAD
-=======
 test('getUser should return the userArray from localStorage ', (expect) => {
     const userArray = {
         name: 'zachary',
@@ -61,4 +51,3 @@ test('getUser should return the userArray from localStorage ', (expect) => {
     expect.deepEqual(actual, userArray);
 
 });
->>>>>>> 78ae9edc93ca0f44089f1a4b5260d488560c235e
