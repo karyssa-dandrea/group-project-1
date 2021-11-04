@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { getEvents, setEvents } from '../utils/storage-utils.js';
-
+import { getEvents, setEvents, confirmUser } from '../utils/storage-utils.js';
+ 
 const test = QUnit.test;
 
 test('getEvents should get events out of local storage', (expect) => {
@@ -40,4 +40,25 @@ test('setEvents should add an event to our event list', (expect) => {
     setEvents(newEvent);
 
     expect.equal(events.length, 24);
+});
+
+test('confirmUser should compare username and password to users in localStorage', (expect) => {
+    const fakeUsers = [{
+        name: 'zachary',
+        password: 'admin1234',
+        admin: true
+
+    }, {
+        name: 'bailey',
+        password: 'admin1234',
+        admin: true
+
+    }, {
+        name: 'karyssa',
+        password: 'admin1234',
+        admin: true
+    }];
+    const userName = 'zachary';
+    const password = 'admin1234';
+    
 });
