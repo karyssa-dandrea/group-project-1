@@ -14,7 +14,7 @@ export function confirmUser(userArray, username, password) {
         if (username === user.name && password === user.password) {
             const loggedIn = user;
             localStorage.setItem('LOGGEDIN', JSON.stringify(loggedIn));
-            return window.location.replace('../admin/index.html');
+            return window.location.replace('./admin/index.html');
         }
     }
 }
