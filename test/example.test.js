@@ -1,18 +1,43 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-
+import { getEvents, setEvents } from '../utils/storage-utils.js';
+import { renderEvents } from '../utils/render-functions.js';
 const test = QUnit.test;
 
-test('time to test a function', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
-    const expected = true;
-    
-    //Act 
-    // Call the function you're testing and set the result to a const
-    const actual = true;
+test('getEvents should get events out of local storage', (expect) => {
+    const fakeEvent = {
+        venue: 'Doug Fir',
+        opener: 'Zach',
+        headliner: 'Karyssa',
+        price: 'Free',
+        image: 'www.fakeimage.com',
+        doors: '7:00 pm',
+        date: '2021-11-6',
+        link: 'www.faketicket.com'
+    };
 
-    //Expect
-    // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
+    localStorage.setItem('EVENTS', JSON.stringify(fakeEvent));
+
+    const events = getEvents();
+    expect.deepEqual(events, fakeEvent);
+});
+
+test('setEvents should add an event to our event list', (expect) => {
+    localStorage.removeItem('EVENTS');
+    
+    let events = getEvents();
+    const newEvent = {
+        venue: 'Doug Fir',
+        opener: 'Zach',
+        headliner: 'Karyssa',
+        price: 'Free',
+        image: 'www.fakeimage.com',
+        doors: '7:00 pm',
+        date: '2021-11-6',
+        link: 'www.faketicket.com'
+    };
+
+    setEvents(newEvent);
+
+    expect.equal(events.length, 24);
 });
