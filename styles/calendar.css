@@ -65,3 +65,13 @@ table {
 body {
     text-align: center;
 }
+
+h1 {
+    font-size: 150px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+h2 {
+    margin-top: 0px;
+}
