@@ -1,5 +1,7 @@
 
 import { setEvents } from '../utils/storage-utils.js';
+// it would be cool to add a check here that the admin is currently logged in
+// if not, you could redirect to the home page
 
 const form = document.getElementById('admin-form');
 

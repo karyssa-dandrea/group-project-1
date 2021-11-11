@@ -1,5 +1,7 @@
 import { events } from '../data/events.js';
 
+// I'd changed this to plural so as not to confuse
+// it with the logged in user
 export function setUser(userArray) {
     localStorage.setItem('USER', JSON.stringify(userArray));
 }
@@ -15,8 +17,11 @@ export function confirmUser(userArray, username, password) {
             const loggedIn = user;
             localStorage.setItem('LOGGEDIN', JSON.stringify(loggedIn));
             return window.location.replace('../admin/index.html');
-        }
+        } 
+        // would be good to add an else condition here
+        // to handle the case where the login doesn't match
     }
+
 }
 
 export function getEvents() {

@@ -5,6 +5,11 @@ let yyyy = today.getFullYear();
 let todayDay = today.getDate();
 today = mm + '/' + dd + '/' + yyyy;
 
+// a few functions you may want to look into are:
+//   setDate -- setDate will update the 
+//      date to the day of the month you input
+//   toLocaleString -- will format your date as a string
+
 export function renderCalendar() {
     const thead = document.getElementById('cal-thead');
     for (let i = 0; i <= 6; i++){
@@ -19,6 +24,10 @@ export function renderCalendar() {
 
 export function renderEvents(events){
     const tbody = document.getElementById('cal-body');
+    // if you move this event filtering into its own function
+    // you can test filtering by a specific date rather
+    // than just limiting to the current week
+    // this would help you implement the "next week" feature
     const eventData = events.filter(event=>{
         let today = new Date();
         const eventDate = new Date(event.date);
